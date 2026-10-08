@@ -1,0 +1,37 @@
+name: Order DetailDesk
+description: Buy the $750 photo quote desk
+title: "Order: "
+labels: ["order"]
+body:
+  - type: input
+    id: business
+    attributes:
+      label: Business name
+    validations:
+      required: true
+  - type: input
+    id: city
+    attributes:
+      label: City
+    validations:
+      required: true
+  - type: textarea
+    id: services
+    attributes:
+      label: Services you offer
+      description: Example: full detail, interior, exterior.
+    validations:
+      required: true
+  - type: input
+    id: email
+    attributes:
+      label: Email
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: I want the $750 desk (request page, quote, deposit status, done).
+          required: true
